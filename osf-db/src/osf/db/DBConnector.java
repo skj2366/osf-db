@@ -19,7 +19,6 @@ public class DBConnector {
 		try {
 			con = DriverManager.getConnection(URL,USER,PASSWORD); 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -38,7 +37,6 @@ public class DBConnector {
 					con.close();
 				}
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
