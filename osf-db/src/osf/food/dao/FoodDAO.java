@@ -6,9 +6,15 @@ import osf.food.vo.FoodVO;
 
 public interface FoodDAO {
 
-	public List<FoodVO> selectFoodList();
-	public FoodVO selectFood(FoodVO food);
-	public boolean insertFood(FoodVO food);
-	public boolean deleteFood(FoodVO food);
-	public boolean updateFood(FoodVO food);
+	public List<FoodVO> selectFoodList(FoodVO food);
+
+//	public FoodVO selectFood(FoodVO food);
+	public FoodVO selectFood(Integer foodNum);
+
+	public int insertFood(FoodVO food);
+
+	public int deleteFood(FoodVO food);
+
+	public int updateFood(FoodVO food);
+
 }
